@@ -11,6 +11,7 @@
 
 <body>
     <nav class="navbar bg-light fixed-top">
+        <!-- sidebar -->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">UTS LARAVEL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
