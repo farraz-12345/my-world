@@ -26,3 +26,7 @@ Route::get('/about', function () {
         <a href='/'>home</a>
     ";
 });
+
+Route::get('/uts-home', function () {
+    return view('uts.home');
+});
