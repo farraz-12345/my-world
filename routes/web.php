@@ -51,5 +51,16 @@ Route::get('/uts-produk', function () {
 });
 
 Route::get('/uts-tambah-produk', function () {
-    return view('uts.tambah-produk');
+    $products_type = [
+        [
+            "jenis" => "Alat Tulis"
+        ],
+        [
+            "jenis" => "Elektronik"
+        ],
+        [
+            "jenis" => "Sembako"
+        ],
+    ];
+    return view('uts.tambah-produk', compact('products_type'));
 });

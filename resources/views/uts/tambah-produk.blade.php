@@ -52,8 +52,13 @@
                 <label for="nama_produk" class="form-label">nama Produk</label>
                 <input type="text" id="nama_produk" class="form-control" placeholder="Input nama Produk">
             </div><div class="col-4 mb-1">
-                <label for="jenis_produk" class="form-label">jenis Produk</label>
-                <input type="text" id="jenis_produk" class="form-control" placeholder="pilih Produk">
+                <label for="jenis_produk" class="form-label">Jenis Produk</label>
+                 <select id="jenis_produk" class="form-control">
+                     <option selected value="">Pilih Produk</option>
+                    @foreach ($products_type as $product_type)
+                    <option value="">{{ $product_type['jenis'] }}</option>
+                     @endforeach
+            </select>
             </div>
             <div class="col-6 mb-1">
                 <label for="input_harga" class="form-label">harga</label>
